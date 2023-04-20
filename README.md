@@ -1,3 +1,89 @@
+# Tailwind CSS Tutorial
+
+## Learn Tailwind CSS – Course for Beginners
+### URL: https://youtu.be/ft30zcMlFao
+
+---
+1. Crear proyecto:
+
+```sh
+npx create-next-app@latest tailwind-css-tut --typescript --eslint
+
+cd tailwind-css-tut
+```
+  -  Opciones:
+
+```sh
+√ Would you like to use Tailwind CSS with this project? ... [No]
+
+√ Would you like to use `src/` directory with this project? ... [No]
+
+√ Would you like to use experimental `app/` directory with this project? ... [Yes]
+
+√ What import alias would you like configured? ... @/* [Enter]
+```
+
+2. Instalar Tailwind CSS:
+
+```sh
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+```
+
+3. Configurar las rutas de plantillas en `tailwind.config.js`:
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+```
+
+4. Agregar las directivas de Tailwind a tu CSS en `globals.css`: 
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+5. Ejecutar aplicación: 
+
+```sh
+npm run dev
+```
+
+6. Probar la app modificando `page.tsx`:
+
+```js
+export default function Home() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
+```
+
+
+
+```sh
+```
+
+
+---
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

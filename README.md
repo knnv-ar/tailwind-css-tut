@@ -1,9 +1,33 @@
 # Tailwind CSS Tutorial
 
-## Learn Tailwind CSS – Course for Beginners
-### URL: https://youtu.be/ft30zcMlFao
+Learn Tailwind CSS – Course for Beginners
+
+URL: https://youtu.be/ft30zcMlFao
+
+Tailwind CSS v3.3.1
+
+1. Configuración y conceptos principales
+2. Color
+3. Customization
+4. Typography
+5. Spaces & sizes
+6. Flex
+7. Grids
+8. Layouts
+9. Borders
+10. Effects & filters
+11. Animations
+12. Design System
+13. Core concepts
+14. Dark mode
+
 
 ---
+
+## 1. Configuración y conceptos principales
+
+### 1.1 Configuración
+
 1. Crear proyecto:
 
 ```sh
@@ -74,6 +98,100 @@ export default function Home() {
   )
 }
 ```
+
+---
+
+### 1.2 Conceptos principales
+
+1. Clases de utilidad (utility classes)
+
+
+**Responsive design: modifiers**
+
+```
+sm, md, lg, etc.
+```
+
+| Breakpoint prefix | Minimum width | CSS |
+| --- | --- | --- |
+| sm | 640px | @media (min-width: 640px) { ... } |
+| md | 768px | @media (min-width: 768px) { ... } |
+| lg | 1024px | @media (min-width: 1024px) { ... } |
+| xl | 1280px | @media (min-width: 1280px) { ... } |
+| 2xl | 1536px | @media (min-width: 1536px) { ... } |
+
+
+```
+md:w-32
+
+hover:underline
+
+focus:outline-non
+
+active:bg-violet-700
+
+last:pb-0
+
+odd:bg-white
+
+even:bg-slate-50
+
+first:pt-0
+
+last:pb-0
+
+before:block
+
+after:text-red-500
+
+placeholder:italics
+
+marker:text-sky-400
+
+selection: bg:fuchsia-300
+
+dark:bg-slate-900
+```
+
+Temas configurables en `tailwind.config.js`:
+
+```js
+module.exports = {
+  theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    colors: {
+      'blue': '#1fb6ff',
+      'pink': '#ff49db',
+      'orange': '#ff7849',
+      'green': '#13ce66',
+      'gray-dark': '#273444',
+      'gray': '#8492a6',
+      'gray-light': '#d3dce6',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+    extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      }
+    }
+  }
+}
+```
+---
+
+## 2. Color
 
 
 

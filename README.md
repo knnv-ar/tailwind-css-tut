@@ -541,7 +541,7 @@ Al inicio del proyecto:
 
 ## 4. Tipografía
 
-### 4.1 Tamaño de tipografía
+### 4.1 Tamaño de tipografía (font size)
 
 URL: https://tailwindcss.com/docs/font-size
 
@@ -579,6 +579,22 @@ export default function Home() {
 }
 ```
 
+Y en relación al peso de la tipografía (**font weight**) pensemos que el `normal` equivale a un peso de `400` mientras que una negrita (`bold`) equivale a un peso de `700`.
+
+Veamos la siguiente tabla:
+
+| Class | Properties |
+| --- | --- |
+| font-thin	| font-weight: 100; |
+| font-extralight | font-weight: 200; |
+| font-light | font-weight: 300; |
+| font-normal	| font-weight: 400; |
+| font-medium	| font-weight: 500; |
+| font-semibold	| font-weight: 600; |
+| font-bold	 | font-weight: 700; |
+| font-extrabold | font-weight: 800; |
+| font-black | font-weight: 900; |
+
 ### 4.2 Personalizando tu tema
 
 Para personalizar con valores arbitrarios escribimos en el archivo `tailwind.config.js`:
@@ -609,7 +625,7 @@ module.exports = {
 }
 ```
 
-### 4.3 Personalizando la familia de tipografía
+### 4.3 Personalizando la familia de tipografía (font family)
 
 1. Primero vamos a Google Fonts y seleccionamos los cuerpos tipográficos que queremos utilizar en la ventana **Review**.
 
@@ -660,7 +676,7 @@ font-family: 'Gentium Book Plus', serif;
 }
 ```
 
-### 4.4 Suavizado de tipografías
+### 4.4 Suavizado de tipografías (font smoothing)
 
 Podemos utilizar las clases `antialiased` (de renderizado más rápido) y `subpixel-antialiased` (de renderizado más lento pero mejor calidad).
 
@@ -669,7 +685,7 @@ Podemos utilizar las clases `antialiased` (de renderizado más rápido) y `subpi
 <p class="antialiased ...">The quick brown fox ...</p>
 ```
 
-### 4.5 Estilo de tipografías
+### 4.5 Estilo de tipografías (font style)
 
 Podemos utilizar las clases `not-italic` y `italic`.
 
@@ -678,7 +694,7 @@ Podemos utilizar las clases `not-italic` y `italic`.
 <p class="not-italic ...">The quick brown fox ...</p>
 ```
 
-### 4.6 Decoración de texto
+### 4.6 Decoración de texto (text decoration)
 
 Podemos utilizar las clases `underline`, `overline`, `line-through` y `no-underline`.
 
@@ -689,7 +705,7 @@ Podemos utilizar las clases `underline`, `overline`, `line-through` y `no-underl
 <p class="no-underline ...">The quick brown fox ...</p>
 ```
 
-### 4.7 Color de decoración de texto
+### 4.7 Color de decoración de texto (text decoration color)
 
 Podemos determinar el color de cada uno de las propiedades de decoración de texto.
 
@@ -704,7 +720,7 @@ Podemos determinar el color de cada uno de las propiedades de decoración de tex
 </div>
 ```
 
-### 4.8 Estilo de decoración de texto
+### 4.8 Estilo de decoración de texto (text decoration style)
 
 Podemos determinar el estilo de decoración de texto.
 
@@ -716,7 +732,7 @@ Podemos determinar el estilo de decoración de texto.
 <p class="underline decoration-wavy ...">The quick brown fox...</p>
 ```
 
-### 4.9 Grosor de decoración de texto
+### 4.9 Grosor de decoración de texto (Text Decoration Thickness)
 
 Podemos determinar el grosor de decoración de texto.
 
@@ -726,7 +742,7 @@ Podemos determinar el grosor de decoración de texto.
 <p class="underline decoration-4 ...">The quick brown fox...</p>
 ```
 
-### 4.10 Desplazamiento de subrayado de texto
+### 4.10 Desplazamiento de subrayado de texto (Text Underline Offset)
 
 Podemos determinar el desplazamiento de subrayado de texto.
 
@@ -737,7 +753,7 @@ Podemos determinar el desplazamiento de subrayado de texto.
 <p class="underline underline-offset-8 ...">The quick brown fox...</p>
 ```
 
-### 4.11 Altura de linea
+### 4.11 Altura de linea (Line Height)
 
 Podemos determinar altura de linea.
 
@@ -748,9 +764,9 @@ Podemos determinar altura de linea.
 <p class="underline underline-offset-8 ...">The quick brown fox...</p>
 ```
 
-### 4.12 Transformadores de linea
+### 4.12 Transformadores de texto (Text Transform)
 
-Podemos determinar transformadores de linea.
+Podemos determinar transformadores de texto.
 
 ```js
 <p class="normal-case ...">The quick brown fox ...</p>
@@ -759,7 +775,7 @@ Podemos determinar transformadores de linea.
 <p class="capitalize ...">The quick brown fox ...</p>
 ```
 
-### 4.13 Desbordamiento de texto (ayudantes de palabras)
+### 4.13 Desbordamiento de texto [ayudantes de palabras] (Text Overflow)
 
 Podemos determinar desbordamiento de texto tal como: `truncate`, `text-ellipsis` y `text-clip`.
 
@@ -769,7 +785,7 @@ Podemos determinar desbordamiento de texto tal como: `truncate`, `text-ellipsis`
 </div>
 ```
 
-### 4.14 Espacio en blanco  (ayudantes de palabras, espacios y ajustes de lineas)
+### 4.14 Espacio en blanco [ayudantes de palabras, espacios y ajustes de lineas] (Whitespace)
 
 Podemos determinar espacio en blanco tales como: `whitespace-normal`, `whitespace-nowrap`, `whitespace-pre`, `whitespace-pre-line`, `whitespace-pre-wrap` y `whitespace-break-spaces`.
 
@@ -783,7 +799,7 @@ You will never know.</div>
 </div> 
 ```
 
-### 4.15 Salto de palabra
+### 4.15 Salto de palabra (Word Break)
 
 Podemos determinar espacio en blanco tales como: `break-normal`, `break-words`, `break-all` y `break-keep`.
 

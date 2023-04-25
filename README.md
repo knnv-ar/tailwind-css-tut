@@ -845,6 +845,65 @@ URL: https://tailwindcss.com/docs/space
 
 Se puede usar valores negativo como para superponer elementos: `-mt-8`.
 
+### 5.4 Ancho fijo (fixed width)
+
+URL: https://tailwindcss.com/docs/width
+
+O bien usamos los dados por el framework, o bien usamos los corchetes para determinar el ancho arbitrario: `w-[500px]`.
+
+```js
+<div>
+<div className="w-16 h-16 bg-red-500"></div>
+<div className="w-16 h-16 bg-green-500"></div>
+</div>
+```
+
+w-16 = 64px
+
+### 5.5 Ancho en porcentaje (percentage widths)
+
+URL: https://tailwindcss.com/docs/width
+
+Estos funcionan con `flex`.
+
+w-full | 100%
+w-1/6  | 16.666667%
+w-1/5  | 20%
+w-1/4  | 25%
+w-1/3  | 33.333333%
+w-2/5  | 40%
+w-1/2  | 50%
+
+```js
+<div className="flex w-full">
+<div className="w-1/2 h-16 bg-red-500"></div>
+<div className="w-1/2 h-16 bg-green-500"></div>
+</div>
+```
+
+**MUY IMPORTANTE:** el siguiente ejemplo simula una etiqueta div que contiene un navbar (rojo) y un contenido (verde). La altura del rojo está determinada por la altura del verde gracias a la clase de utilidad `w-min-width`.
+
+```js
+<div className="flex w-full">
+  <div className="w-1/5 bg-red-500 w-min-width"></div>
+  <div className="w-4/5 h-64 bg-green-500"></div>
+</div>
+```
+
+### 5.6 Min-Width, Max-Width, Min-Height y Max-Height
+
+Otro ejemplo donde el `div` padre incluye la clase `min-h-screen` la cual determina que todos los hijos tendran como altura mínima el alto total de la pantalla:
+
+```js
+<div className="flex min-h-screen">
+  <div className="w-1/5 bg-red-500 w-min-width"></div>
+  <div className="w-4/5 bg-green-500"></div>
+</div>
+```
+
+### 5.7 Espacio entre elementos secundarios (space between)
+
+URL: https://tailwindcss.com/docs/space
 
 
 

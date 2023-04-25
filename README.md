@@ -809,13 +809,41 @@ Podemos determinar espacio en blanco tales como: `break-normal`, `break-words`, 
 
 ## 5. Espacios y tamaños (spaces and sizes)
 
-### 5.1 xxx
+### 5.1 Rellenos (padding)
 
+URL: https://tailwindcss.com/docs/padding
 
+p-0 | padding de 0px en todos los lados
 
+p-1 | padding de 4px en todos los lados
 
+p-4 | padding de 16px en todos los lados
 
+pb-4 | padding de 16px en el lado inferior
 
+pt-4 | padding de 16px en el lado superior
+
+pr-4 | padding de 16px en el lado derecho
+
+pl-4 | padding de 16px en el lado izquierdo
+
+px-4 | padding de 16px en los lados izquierdo y derecho
+
+py-4 | padding de 16px en los lados superior e inferior
+
+### 5.2 Márgenes (margin)
+
+URL: https://tailwindcss.com/docs/margin
+
+Funciona como padding pero cambiando la letra `p` por la `m`. Para los títulos se utiliza muchas veces un margen en el lado inferior con `mb`: por ejemplo `mb-2`.
+
+m-0 | margin de 0px en todos los lados
+
+### 5.3 Espacio entre elementos secundarios (space between)
+
+URL: https://tailwindcss.com/docs/space
+
+Se puede usar valores negativo como para superponer elementos: `-mt-8`.
 
 
 
